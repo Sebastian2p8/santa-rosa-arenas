@@ -1,0 +1,87 @@
+:root {
+    --cafe: #5C3A00;
+    --amarillo: #FDB913;
+    --bs-body-bg: #FFF8E7;
+    --bs-body-color: #2B2118;
+}
+
+.bg-cafe {
+    background-color: var(--cafe);
+}
+
+.bg-amarillo {
+    background-color: var(--amarillo);
+    color: #161616;
+}
+
+.btn-marca {
+    --bs-btn-color: #FFF8E7;
+    --bs-btn-bg: var(--cafe);
+    --bs-btn-border-color: var(--cafe);
+    --bs-btn-hover-color: #161616;
+    --bs-btn-hover-bg: var(--amarillo);
+    --bs-btn-hover-border-color: var(--amarillo);
+    --bs-btn-active-color: #161616;
+    --bs-btn-active-bg: var(--amarillo);
+    --bs-btn-active-border-color: var(--amarillo);
+    --bs-btn-focus-shadow-rgb: 92, 58, 0;
+}
+
+.navbar-dark {
+    --bs-navbar-color: rgba(255, 255, 255, 0.85);
+    --bs-navbar-hover-color: #FDB913;
+    --bs-navbar-active-color: #FFFFFF;
+}
+
+.precio {
+    display: inline-block;
+    background: var(--amarillo);
+    color: #161616;
+    font-weight: bold;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+}
+
+#lista-pedido li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #E3DECF;
+}
+
+.btn-quitar {
+    border: 2px solid var(--cafe);
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: var(--cafe);
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+}
+
+.card img,
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+/* Los enlaces del menú con su forma de pastilla y letras siempre en blanco */
+.navbar .navbar-nav .nav-link {
+    display: inline-block !important;
+    padding: 0.5rem 0.75rem !important;
+    color: #ffffff !important; /* <--- Aquí aseguramos que el texto sea blanco por defecto */
+    text-decoration: none !important;
+    border: 2px solid var(--crema) !important;
+    border-radius: 999px !important;
+    margin-right: 0.5rem !important;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease !important;
+}
+
+/* Efecto cuando pasas el mouse o está activo (fondo amarillo con letras oscuras para que se lea bien) */
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active {
+    background: var(--amarillo) !important;
+    color: #603E15 !important; /* Letras oscuras sobre el fondo amarillo para que tengan buen contraste */
+    border-color: var(--amarillo) !important;
+}
